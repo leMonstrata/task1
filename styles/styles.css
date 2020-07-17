@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Aristotelica';
+    src: url('/fonts/zetafonts_-_aristotelicapro_cndtext_extralight-webfont.woff2') format('woff2'),
+         url('/fonts/zetafonts_-_aristotelicapro_cndtext_extralight-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Aristotelica';
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.lessons {
+    margin: 0 auto;
+}
+
+.lessons__title {
+    font-family: var(--titleFont);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.tab {
+    box-shadow: 0px 0px 5px 0px rgb(189, 188, 188);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.tab__header {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.tab__header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 80%;
+}
+
+.tab__header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 30%;
+}
+
+.tab__title {
+    font-size: 28px;
+    padding: 20px;
+    margin: 10px;
+    color: blue;
+}
+
+.tab__lessons {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.tab__name {
+    display: flex;
+    font-size: 30px;
+}
+
+.tab__stats {
+    color: blue;
+}
+
+.tab__status {
+    color: #00FF40;
+}
+
+.tab__filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    color: gray;
+}
+
+.tab__filter-theme {
+    display: flex;
+    flex-basis: 70%;
+}
+.tab__filter-test {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.tab__filter-status {
+    flex-basis: 20%;
+}
+
+.tab--active .button-icon {
+    transform: rotate(180deg);
+}
+
+.tab--active .tab__display {
+    display: block;
+}
+
+.tab__display {
+    display: none;
+}
+
+.button {
+    padding: 20px;
+    margin-left: 30px
+}
+
+.interactive {
+    margin: 0;
+}
+
+.interatcive__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: 2px solid #E3E3E3;
+    padding: 20px 0 20px;
+    cursor: pointer;
+}
+
+.interatcive__item:last-child {
+    border: 0;
+}
+
+.interatcive__title {
+    text-transform: none;
+    display: flex;
+    flex-basis: 69%;
+    color: black;
+}
+
+.interatcive__test {
+    display: flex;
+    flex-basis: 11%;
+
+}
+
+.interatcive__status {
+    display: flex;
+    flex-basis: 20%;
+    font-size: 16px;
+    color: #00FF40;
+}
+
+
+.button-icon {
+    transition: transform .5s;
+}
